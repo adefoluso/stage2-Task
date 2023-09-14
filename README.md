@@ -73,8 +73,13 @@ Below is an example of how your `config.json` file should be structured for deve
   }
 }
 
+```
+
 - To run the server execute
 
  ```
  npm start
  ```
+
+##### UML DIAGRAM FOR PROJECT
+The UML diagram 1 can be found [here] <https://github.com/adefoluso/stage2-Task/blob/main/src/UML-IMAGE/UML_screenshot.png>
