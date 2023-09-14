@@ -58,6 +58,21 @@ Before you begin, ensure you have the following:
 - If you're setting up your development environment, then write the username of your db, password of your db and in dialect mention whatever db you are using for ex: mysql, mariadb etc
 - If you're setting up test or prod environment, make sure you also replace the host with the hosted db url.
 
+Below is an example of how your `config.json` file should be structured for development mode only.
+
+## Configuration File Example (`config.json`)
+
+```json
+{
+  "development": {
+    "username": "<YOUR_DB_USERNAME OR DEFAULT root>",
+    "password": "<YOUR_DB_PASSWORD>",
+    "database": "<YOUR PREFERRED DB NAME FOR THE PROJECT",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
+
 - To run the server execute
 
  ```

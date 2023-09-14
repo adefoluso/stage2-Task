@@ -4,10 +4,21 @@ const createPersonSchema = Joi.object({
   name: Joi.string().min(4).max(255).required(),
 });
 
-const fetchPersonSchema = Joi.object({
+const validateFetchPersonSchema = Joi.object({
   id: Joi.string().uuid().required(),
 });
+
+const validateModifyPersonSchema = Joi.object({
+  name: Joi.string().required(),
+  id: Joi.string().uuid().required(),
+});
+
+const validateDeletePersonSchema = Joi.object({
+    id: Joi.string().uuid().required(),
+})
 module.exports = {
   createPersonSchema,
- fetchPersonSchema
+  validateModifyPersonSchema,
+  validateFetchPersonSchema,
+  validateDeletePersonSchema,
 };
