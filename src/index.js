@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
 const app = express();
+const path = require("path");
 const cron = require("node-cron");
 
 const { PORT } = require("./config/serverConfig");
